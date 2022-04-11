@@ -1,0 +1,22 @@
+name: VeciDoInventare
+version: 1.0
+main: veci.MainVeci
+api-version: 1.18
+
+commands:
+  _boty:
+  _brneni:
+  _helma:
+  _kalhoty:
+  _vybava:
+  _lukSipy:
+  _trojzubec:
+  _mec:
+  _motyka:
+  _sekera:
+  _stit:
+  _jablko:
+  _mrkevNaPrutu:
+  _zmenaMaterialu:
+    description: zmeni jeden material na druhy
+    usage: /<prikaz> [vychoziMaterial] [cilovyMaterial]
