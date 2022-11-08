@@ -2,6 +2,7 @@ package veci;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import veci.ostatni.KouzelneJablko;
+import veci.ostatni.Krovky;
 import veci.ostatni.MrkevNaPrutu;
 import veci.ostatni.ZmenaMaterialu;
 import veci.zbrane.*;
@@ -25,6 +26,7 @@ public class MainVeci extends JavaPlugin {
         getCommand("_sekera").setExecutor(new Sekera());
         getCommand("_stit").setExecutor(new Stit());
 
+        getCommand("_krovky").setExecutor(new Krovky());
         getCommand("_jablko").setExecutor(new KouzelneJablko());
         getCommand("_mrkevNaPrutu").setExecutor(new MrkevNaPrutu());
         getCommand("_zmenaMaterialu").setExecutor(new ZmenaMaterialu());

@@ -15,7 +15,6 @@ public class Stit extends PlayerCommandExecutor {
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
         ItemStack stit = new ItemStack(Material.SHIELD, 1);
         player.getInventory().addItem(stit);
-
         return true;
     }
 }
