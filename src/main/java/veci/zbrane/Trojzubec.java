@@ -14,7 +14,7 @@ public class Trojzubec extends PlayerCommandExecutor {
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
         ItemStack trojzubec = new ItemStack(Material.TRIDENT, 1);
         trojzubec.addEnchantment(Enchantment.CHANNELING, 1); //blesk
-        trojzubec.addEnchantment(Enchantment.LOYALTY, 3); //vrati se do ruky
+        trojzubec.addEnchantment(Enchantment.LOYALTY, 1); //vrati se do ruky
         player.getInventory().addItem(trojzubec);
         return true;
     }

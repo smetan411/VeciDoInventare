@@ -23,11 +23,8 @@ public class Motyka extends PlayerCommandExecutor {
 
         AttributeModifier niceni = new AttributeModifier("Damage", 1000000, AttributeModifier.Operation.ADD_NUMBER);
         vlastnosti.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, niceni);
-
-        AttributeModifier jednouRanou = new AttributeModifier("Vydrz", 1, AttributeModifier.Operation.ADD_NUMBER);
-        vlastnosti.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, jednouRanou);
-
         motykaZhouby.setItemMeta(vlastnosti);
+
         player.getInventory().addItem(motykaZhouby);
         return true;
     }

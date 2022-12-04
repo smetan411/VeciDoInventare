@@ -12,6 +12,7 @@ public class MainVeci extends JavaPlugin {
 
     @Override
     public void onEnable() {
+
         getCommand("_boty").setExecutor(new Boty());
         getCommand("_brneni").setExecutor(new Brneni());
         getCommand("_helma").setExecutor(new Helma());
@@ -25,11 +26,16 @@ public class MainVeci extends JavaPlugin {
         getCommand("_trojzubec").setExecutor(new Trojzubec());
         getCommand("_sekera").setExecutor(new Sekera());
         getCommand("_stit").setExecutor(new Stit());
+        getCommand("_krumpac").setExecutor(new KrumpacPickAxe());
+
 
         getCommand("_krovky").setExecutor(new Krovky());
         getCommand("_jablko").setExecutor(new KouzelneJablko());
         getCommand("_mrkevNaPrutu").setExecutor(new MrkevNaPrutu());
         getCommand("_zmenaMaterialu").setExecutor(new ZmenaMaterialu());
+
+        getPlugin(MainVeci.class).getLogger().info("plugin enabled!!!!!");
+        getCommand("_vlnaBloku").setExecutor(new VlnaBloku(this));
 
 
 

@@ -15,9 +15,13 @@ commands:
   _motyka:
   _sekera:
   _stit:
+  _krumpac:
   _krovky:
   _jablko:
   _mrkevNaPrutu:
+  _vlnaBloku:
+    description: sip leti, bloky pod nim vyskakuji, udela to vlnu
+    usage: /<prikaz> [rychlostSipu1-2] [leti true/false] [pasazer true/false] [maxBloky<200]
   _zmenaMaterialu:
     description: zmeni jeden material na druhy
     usage: /<prikaz> [vychoziMaterial] [cilovyMaterial]
