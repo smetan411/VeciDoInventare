@@ -100,7 +100,8 @@ public class VlnaBloku extends PlayerCommandExecutor {
                 if ((previousblock.getX() == block.getX()) && (previousblock.getZ() == block.getZ()) && (amountOfBlocks < 100) && (!firstBlock)) {
                     plugin.getServer().broadcastMessage("Same block!; Skipping!");
                 } else {
-                    // current block isn't same as previous one, making the block jump (save data, remove block, spawn falling block with matching data and position and add force to itself)
+                    // current block isn't same as previous one, making the block jump (save data, remove block, spawn
+                    // falling block with matching data and position and add force to itself)
                     amountOfBlocks++;
                     BlockData blockinfo = block.getBlockData();
                     block.setType(Material.AIR);

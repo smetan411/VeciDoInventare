@@ -19,11 +19,11 @@ public class CelaVybava extends PlayerCommandExecutor {
         boty.addEnchantment(Enchantment.THORNS,2);
         boty.addEnchantment(Enchantment.FROST_WALKER,1);
 
-        ItemStack brneni = new ItemStack(Material.DIAMOND_CHESTPLATE, 1);
-        brneni.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 3);
-        brneni.addEnchantment(Enchantment.PROTECTION_PROJECTILE, 4);
-        brneni.addEnchantment(Enchantment.PROTECTION_FIRE, 3);
-        brneni.addEnchantment(Enchantment.THORNS, 2);
+        ItemStack pancir = new ItemStack(Material.DIAMOND_CHESTPLATE, 1);
+        pancir.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 3);
+        pancir.addEnchantment(Enchantment.PROTECTION_PROJECTILE, 4);
+        pancir.addEnchantment(Enchantment.PROTECTION_FIRE, 3);
+        pancir.addEnchantment(Enchantment.THORNS, 2);
 
         ItemStack helma = new ItemStack(Material.DIAMOND_HELMET, 1);
         helma.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 3);
@@ -38,7 +38,12 @@ public class CelaVybava extends PlayerCommandExecutor {
         kalhoty.addEnchantment(Enchantment.THORNS,2);
         kalhoty.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL,4);
 
-        player.getInventory().addItem(boty, brneni, helma, kalhoty);
+        // mame dve moznosti, do inventare nebo hrace oblect
+        // player.getInventory().addItem(boty, pancir, helma, kalhoty);
+        player.getInventory().setBoots(boty);
+        player.getInventory().setHelmet(helma);
+        player.getInventory().setLeggings(kalhoty);
+        player.getInventory().setChestplate(pancir);
 
         return true;
     }
