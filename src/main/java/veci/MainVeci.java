@@ -27,6 +27,7 @@ public class MainVeci extends JavaPlugin {
         getCommand("_sekera").setExecutor(new Sekera());
         getCommand("_stit").setExecutor(new Stit());
         getCommand("_krumpac").setExecutor(new KrumpacPickAxe());
+        getCommand("_kusRaketa").setExecutor(new Kus());
 
 
         getCommand("_krovky").setExecutor(new Krovky());

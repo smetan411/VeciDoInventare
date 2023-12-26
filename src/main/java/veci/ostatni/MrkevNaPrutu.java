@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 import veci.PlayerCommandExecutor;
 
 public class MrkevNaPrutu extends PlayerCommandExecutor {
-
+    //z prasete sesedneme pomoci klavesy shift
     @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
         ItemStack mrkevNaPrutu = new ItemStack(Material.CARROT_ON_A_STICK, 1);
