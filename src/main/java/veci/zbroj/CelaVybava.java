@@ -13,30 +13,29 @@ public class CelaVybava extends PlayerCommandExecutor {
     @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
         ItemStack boty = new ItemStack(Material.DIAMOND_BOOTS,1);
-        boty.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS,3);
-        boty.addEnchantment(Enchantment.PROTECTION_PROJECTILE,4);
-        boty.addEnchantment(Enchantment.PROTECTION_FIRE,3);
+        boty.addEnchantment(Enchantment.BLAST_PROTECTION,3);
+        boty.addEnchantment(Enchantment.PROJECTILE_PROTECTION,4);
+        boty.addEnchantment(Enchantment.FIRE_PROTECTION,3);
         boty.addEnchantment(Enchantment.THORNS,2);
         boty.addEnchantment(Enchantment.FROST_WALKER,1);
 
         ItemStack pancir = new ItemStack(Material.DIAMOND_CHESTPLATE, 1);
-        pancir.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 3);
-        pancir.addEnchantment(Enchantment.PROTECTION_PROJECTILE, 4);
-        pancir.addEnchantment(Enchantment.PROTECTION_FIRE, 3);
+        pancir.addEnchantment(Enchantment.BLAST_PROTECTION, 3);
+        pancir.addEnchantment(Enchantment.PROJECTILE_PROTECTION, 4);
+        pancir.addEnchantment(Enchantment.FIRE_PROTECTION, 3);
         pancir.addEnchantment(Enchantment.THORNS, 2);
 
         ItemStack helma = new ItemStack(Material.DIAMOND_HELMET, 1);
-        helma.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 3);
-        helma.addEnchantment(Enchantment.PROTECTION_PROJECTILE, 4);
-        helma.addEnchantment(Enchantment.PROTECTION_FIRE, 3);
+        helma.addEnchantment(Enchantment.BLAST_PROTECTION, 3);
+        helma.addEnchantment(Enchantment.PROJECTILE_PROTECTION, 4);
+        helma.addEnchantment(Enchantment.FIRE_PROTECTION, 3);
         helma.addEnchantment(Enchantment.THORNS, 2);
 
         ItemStack kalhoty = new ItemStack(Material.DIAMOND_LEGGINGS,1);
-        kalhoty.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS,3);
-        kalhoty.addEnchantment(Enchantment.PROTECTION_PROJECTILE,4);
-        kalhoty.addEnchantment(Enchantment.PROTECTION_FIRE,3);
+        kalhoty.addEnchantment(Enchantment.BLAST_PROTECTION,3);
+        kalhoty.addEnchantment(Enchantment.PROJECTILE_PROTECTION,4);
+        kalhoty.addEnchantment(Enchantment.FIRE_PROTECTION,3);
         kalhoty.addEnchantment(Enchantment.THORNS,2);
-        kalhoty.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL,4);
 
         // mame dve moznosti, do inventare nebo hrace oblect
         // player.getInventory().addItem(boty, pancir, helma, kalhoty);

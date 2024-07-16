@@ -14,10 +14,10 @@ public class LukSipy extends PlayerCommandExecutor {
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
         ItemStack luk = new ItemStack(Material.BOW, 1);
         ItemStack sipy = new ItemStack(Material.ARROW, 1);
-        luk.addEnchantment(Enchantment.ARROW_INFINITE, 1);
-        luk.addEnchantment(Enchantment.ARROW_FIRE, 1);
-        luk.addEnchantment(Enchantment.ARROW_KNOCKBACK, 1);
-        luk.addEnchantment(Enchantment.ARROW_DAMAGE,4);
+        luk.addEnchantment(Enchantment.INFINITY, 1);
+        luk.addEnchantment(Enchantment.FIRE_ASPECT, 1);
+        luk.addEnchantment(Enchantment.KNOCKBACK, 1);
+        luk.addEnchantment(Enchantment.POWER,4);
         player.getInventory().addItem(luk);
         player.getInventory().addItem(sipy);
         return true;

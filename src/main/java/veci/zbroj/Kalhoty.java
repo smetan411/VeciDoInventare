@@ -12,11 +12,10 @@ public class Kalhoty extends PlayerCommandExecutor {
     @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
         ItemStack kalhoty = new ItemStack(Material.DIAMOND_LEGGINGS,1);
-        kalhoty.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS,3);
-        kalhoty.addEnchantment(Enchantment.PROTECTION_PROJECTILE,4);
-        kalhoty.addEnchantment(Enchantment.PROTECTION_FIRE,3);
+        kalhoty.addEnchantment(Enchantment.BLAST_PROTECTION,3);
+        kalhoty.addEnchantment(Enchantment.PROJECTILE_PROTECTION,4);
+        kalhoty.addEnchantment(Enchantment.FIRE_PROTECTION,3);
         kalhoty.addEnchantment(Enchantment.THORNS,2);
-        kalhoty.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL,4);
         player.getInventory().addItem(kalhoty);
         return true;
     }

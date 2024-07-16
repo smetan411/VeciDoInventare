@@ -18,7 +18,7 @@ public class Sekera extends PlayerCommandExecutor {
         vlastnosti.setDisplayName("mojeSekera");
         vlastnosti.setUnbreakable(true);
         sekera.setItemMeta(vlastnosti);
-        sekera.addEnchantment(Enchantment.DAMAGE_ALL, 1);
+       // sekera.addEnchantment(Enchantment.DAMAGE_ALL, 1);
         sekera.addEnchantment(Enchantment.LOYALTY, 1);
         player.getInventory().addItem(sekera);
         return true;
