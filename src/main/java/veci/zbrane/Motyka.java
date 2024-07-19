@@ -20,7 +20,7 @@ public class Motyka extends PlayerCommandExecutor {
 
         ItemMeta vlastnosti = motykaZhouby.getItemMeta();
         vlastnosti.setDisplayName("motyka zhouby");
-
+    // brutalni damage
         AttributeModifier niceni = new AttributeModifier("Damage", 1000000, AttributeModifier.Operation.ADD_NUMBER);
         vlastnosti.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, niceni);
         motykaZhouby.setItemMeta(vlastnosti);

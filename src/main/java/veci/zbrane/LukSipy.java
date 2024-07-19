@@ -15,7 +15,7 @@ public class LukSipy extends PlayerCommandExecutor {
         ItemStack luk = new ItemStack(Material.BOW, 1);
         ItemStack sipy = new ItemStack(Material.ARROW, 1);
         luk.addEnchantment(Enchantment.INFINITY, 1);
-        luk.addEnchantment(Enchantment.FIRE_ASPECT, 1);
+        luk.addEnchantment(Enchantment.FLAME, 1);
         luk.addEnchantment(Enchantment.KNOCKBACK, 1);
         luk.addEnchantment(Enchantment.POWER,4);
         player.getInventory().addItem(luk);

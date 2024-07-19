@@ -14,7 +14,7 @@ public class Mec extends PlayerCommandExecutor {
     @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
         ItemStack mec = new ItemStack(Material.STONE_SWORD, 1);
-        //mec.addEnchantment(Enchantment.DAMAGE_ALL, 5);
+        mec.addEnchantment(Enchantment.SHARPNESS, 5);
         mec.addEnchantment(Enchantment.KNOCKBACK, 2);
         mec.addEnchantment(Enchantment.FIRE_ASPECT, 2);
 
